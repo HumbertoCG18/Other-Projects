@@ -22,7 +22,7 @@
 				</div>
 			</div>
 			<div class="col-md-6 col-sm-12">
-				<div class="styled-input" style="float:right;">
+				<div class="styled-input">
 					<input type="text" required />
 					<label>Número de telefone</label> 
 				</div>

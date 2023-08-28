@@ -1,7 +1,6 @@
 <body>
 <header>
-        <div class="container" id="topnav">
-            <input type="checkbox" name="" id="check">
+        <div class="container" id="topnav" style="margin-top:10px;">
             <div class="nav-btn">
                 <div class="nav-links">
                     <ul>
