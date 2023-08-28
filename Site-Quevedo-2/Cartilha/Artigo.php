@@ -24,7 +24,7 @@ $resultado = mysqli_query( $conn , $sql);
                 while($row = mysqli_fetch_array($resultado)){
                     echo '<title>'.$row['Nome'].'</title>';
                     echo '<a href="Artigo.php?id='.$row['ArtigoID'].'" tabindex="'.$tabArtigos.'">';
-                    echo '</a>'. '<h1 style="margin-left:30px">' . '<center>' . '<br>'.$row['Subtitulo'] . '<br>' . '</h1>' .'</center>' . '<center>' . '<h6 style="width: 980px; text-align: justify;">' . '<br>' . '</center>' . '<center>' . '<img src="Imagens/Artigos/' . $row['Imagem'] .'"width="512px" height="288px"/>'.'</center>'.'<center>'.'<br><br>'.$row['Artigo'].'<br><br>';                     
+                    echo '</a>'. '<h1>' . '<center>' . '<br>'.$row['Subtitulo'] . '<br>' . '</h1>' .'</center>' . '<center>' . '<h6 style="width: 980px; text-align: justify;">' . '<br>' . '</center>' . '<center>' . '<img src="Imagens/Artigos/' . $row['Imagem'] .'"width="512px" height="300px"/>'.'</center>'.'<center>'.'<br><br>'.$row['Artigo'].'<br><br>';                     
                     $tabArtigos++;                
                 }
                }

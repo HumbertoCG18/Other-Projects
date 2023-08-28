@@ -8,7 +8,7 @@
 <main>
     <center>
         <title>Home</title>
-        <div class="container" style="margin-top: 50px;">
+        <div class="container" style="margin-top: 120px;">
             <div class="col-md">
                 <div class="card">
                     <figure class="card__thumb">
