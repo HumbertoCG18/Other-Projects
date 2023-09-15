@@ -1,31 +1,61 @@
 <?php
-// Inclua a biblioteca PHPMailer
-require 'caminho/para/PHPMailer-master/get_oauth_token.php';
+    include_once 'Include/_Db.php';
+    include_once 'Include/_Head.php';
+    include_once 'Include/_Header.php';
 
-// Crie uma instância do PHPMailer
-$mail = new PHPMailer;
+?>
 
-// Configurações do servidor SMTP (no caso do Gmail)
-$mail->isSMTP();
-$mail->Host = 'smtp.gmail.com';  // Servidor SMTP do Gmail
-$mail->SMTPAuth = true;
-$mail->Username = 'gaudy211deer@gmail.com'; // Seu endereço de e-mail do Gmail
-$mail->Password = '23038631'; // Sua senha do Gmail
-$mail->SMTPSecure = 'tls';  // TLS é recomendado
-$mail->Port = 587;  // Porta do servidor SMTP
+<main>
+    <center>
+        <title>Home</title>
+        <div class="container" style="margin-top: 120px;">
+            <div class="col-md">
+                <div class="card">
+                    <figure class="card__thumb">
+                        <img src="Imagens/Cards/Card1.png" class="card__image">
+                        <figcaption class="card__caption">
+                            <h2 class="card__title">Sinópese e contexto técnico</h2>
+                            <br>
+                            <p class="card__snippet">Nesta secção, contarei um pouco da sinópse do jogo e sobre algumas informações técnicas.</p>
+                            <a href="Artigo.php?id=1" class="card__button">Saiba Mais</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
 
-// Remetente e destinatário
-$mail->setFrom('seu_email@gmail.com', 'Seu Nome'); // Seu endereço de e-mail e nome
-$mail->addAddress('destinatario@example.com', 'Nome do Destinatário'); // Endereço de e-mail e nome do destinatário
+            <div class="col-md">
+                <div class="card">
+                    <figure class="card__thumb">
+                        <img src="Imagens/Cards/Card2.png" class="card__image">
+                        <figcaption class="card__caption">
+                            <h2 class="card__title">Enredo</h2>
+                            <br>
+                            <p class="card__snippet">Nesta seção, contarei sobre a história do jogo.</p>
+                            <a href="Artigo.php?id=2" class="card__button">Saiba Mais</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
 
-// Conteúdo do e-mail
-$mail->Subject = 'Assunto do E-mail';
-$mail->Body = 'Corpo do E-mail';
+            <div class="col-md">
+                <div class="card">
+                    <figure class="card__thumb">
+                        <img src="Imagens/Cards/Card3.png" class="card__image">
+                        <figcaption class="card__caption">
+                            <h2 class="card__title">Personagem</h2>
+                            <br>
+                            <p class="card__snippet">Nesta secção, contarei sobre os personagens presentes no jogo.</p>
+                            <a href="Artigo.php?id=3" class="card__button">Saiba Mais</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <br>
+        </div>
+    </center>
+</main>
 
-// Verificação do envio
-if (!$mail->send()) {
-    echo 'Erro ao enviar e-mail: ' . $mail->ErrorInfo;
-} else {
-    echo 'E-mail enviado com sucesso';
-}
+<?php
+    include_once 'Include/_Footer.php';
 ?>
